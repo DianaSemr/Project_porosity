@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>894</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>871</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Добавить запись</string>
+   </property>
+   <widget class="QLineEdit" name="text_edit_material_name">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>наименование материала</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="text_edit_material_area">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>площадь поры</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="text_edit_material_area_std">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>30</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>откл. от площ.</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="text_edit_material_porous">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>30</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>пористость</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="text_edit_material_porous_std">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>30</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>откл. от пористости</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddRow">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>30</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>871</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Удалить запись</string>
+   </property>
+   <widget class="QLineEdit" name="text_edit_material_id">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>номер записи</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDeleteRow">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>20</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Удалить</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnOK">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>380</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ОК</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>981</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="sortingEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="columnCount">
+    <number>6</number>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Наименование</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Площадь поры</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Откл. от площади</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Пористость</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Откл. от пористости</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
